@@ -137,4 +137,6 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
+// loads the tables 'orders', 'menu', and 'orderitems' into the app,
+// can access the tables anywhere with this->[table name]
 $autoload['model'] = array('orders','menu','orderitems');

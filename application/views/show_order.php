@@ -7,8 +7,9 @@
     {code}
 </div>
 {/items}
-<div class="row">    
-    <a href="/order/commit/{order_num}" class="btn btn-large btn-success {okornot}">Proceed</a>
-    <a href="/order/display_menu/{order_num}" class="btn btn-large btn-primary">Keep shopping</a>
-    <a href="/order/cancel/{order_num}" class="btn btn-large btn-danger">Forget about it</a>
+<div class="row">
+    <!--the original code was supposed to be able to disable the Proceed button but didn't, this is the fixed version-->
+    <button onclick="location.href = '/order/commit/{order_num}';" class="btn btn-large btn-success" {okornot}>Proceed</button>
+    <button onclick="location.href = '/order/display_menu/{order_num}';" class="btn btn-large btn-primary">Keep shopping</button>
+    <button onclick="location.href = '/order/cancel/{order_num}';" class="btn btn-large btn-danger">Forget about it</button>
 </div>

@@ -24,6 +24,7 @@ class Welcome extends Application {
         $this->data['pagebody'] = 'welcome';
 
         // Get all the completed orders
+        // 'some' is from MY_Model.php, it needs a column name and a status code
         $completed = $this->orders->some('status','c');
 
         // Build a multi-dimensional array for reporting
